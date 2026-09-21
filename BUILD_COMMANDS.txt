@@ -1,0 +1,5 @@
+For Windows CMD (Command Prompt)
+make clean && make
+
+For Windows PowerShell
+make clean ; make
