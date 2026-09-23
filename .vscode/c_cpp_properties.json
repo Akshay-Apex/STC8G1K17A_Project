@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "STC-MCU",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Program Files/SDCC/include/**"
+            ],
+            "defines": [
+                "__sfr=extern volatile unsigned char",
+                "__sbit=extern volatile __bit",
+                "__at(x)=",
+                "__interrupt(x)=",                
+                "__using(x)=",
+                "__sdcc_mcs51",
+                "__CONF_MCU_MODEL=MCU_MODEL_STC8G1K17"
+            ],
+            "compilerPath": "C:/Program Files/SDCC/bin/sdcc.exe",
+            "cStandard": "c99",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -20,9 +20,9 @@
  * delay too slow or fast.
 */
 #if defined (__SDCC_SYNTAX_FIX)
-    #define __CLK_REF 10000
+    #define __CLK_REF 10775
 #elif defined (SDCC) || defined (__SDCC)
-    #define __CLK_REF 9000
+    #define __CLK_REF 10775
 #elif defined __CX51__ || defined __C51__
     #define __CLK_REF 10000
 #endif
