@@ -94,6 +94,28 @@ int putchar(int dat) {
     return dat;
 }
 
+// Converts and sends an integer as readable digits (e.g., -12345 prints as "-12345")
+void UART1_TxInteger(int16_t num) {
+    char buf[7]; // Safe buffer to hold maximum "-32768\0"
+    uint8_t i = 0;
+    
+    // Handle negative integers cleanly
+    if (num < 0) {
+        UART1_TxChar('-');
+        num = -num;
+    }
+    
+    // Extract base-10 digits in reverse order
+    do {
+        buf[i++] = (num % 10) + '0';
+        num /= 10;
+    } while (num > 0);
+    
+    // Print the digits back out in the correct order
+    while (i > 0) {
+        UART1_TxChar(buf[--i]);
+    }
+}
 
 /**************************************************************************** /
  * UART2

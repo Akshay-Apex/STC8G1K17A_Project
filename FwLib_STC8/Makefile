@@ -22,8 +22,8 @@ USER_CFILES         :=
 USER_INCLUDES       := user
 
 
-## STC8G1K17 33.1776MHz Configuration (Perfect 115200 Baud / Max Speed)
-LIB_FLAGS           := __CONF_FOSC=33177600UL \
+# ## STC8G1K17 5.5296MHz Configuration (Perfect 115200 Baud)
+LIB_FLAGS           := __CONF_FOSC=5529600UL \
                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
                        __CONF_CLKDIV=0x00 \
                        __CONF_IRCBAND=0x01 \
@@ -31,8 +31,9 @@ LIB_FLAGS           := __CONF_FOSC=33177600UL \
                        __CONF_IRTRIM=0x00 \
                        __CONF_LIRTRIM=0x00
 
-# ## STC8G1K17 27.6480MHz Configuration (Perfect 115200 Baud)
-# LIB_FLAGS           := __CONF_FOSC=27648000UL \
+
+# # ## STC8G1K17 11.0592MHz Configuration (Perfect 115200 Baud)
+# LIB_FLAGS           := __CONF_FOSC=11059200UL \
 #                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
 #                        __CONF_CLKDIV=0x00 \
 #                        __CONF_IRCBAND=0x01 \
@@ -40,7 +41,18 @@ LIB_FLAGS           := __CONF_FOSC=33177600UL \
 #                        __CONF_IRTRIM=0x00 \
 #                        __CONF_LIRTRIM=0x00
 
-# ## STC8G1K17 22.1184MHz Configuration (Perfect 115200 Baud / Safe Speed)
+
+# # ## STC8G1K17 18.4320MHz Configuration (Perfect 115200 Baud)
+# LIB_FLAGS           := __CONF_FOSC=18432000UL \
+#                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
+#                        __CONF_CLKDIV=0x00 \
+#                        __CONF_IRCBAND=0x01 \
+#                        __CONF_VRTRIM=0x00 \
+#                        __CONF_IRTRIM=0x00 \
+#                        __CONF_LIRTRIM=0x00
+
+
+# # ## STC8G1K17 22.1184MHz Configuration (Perfect 115200 Baud)
 # LIB_FLAGS           := __CONF_FOSC=22118400UL \
 #                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
 #                        __CONF_CLKDIV=0x00 \
@@ -49,8 +61,9 @@ LIB_FLAGS           := __CONF_FOSC=33177600UL \
 #                        __CONF_IRTRIM=0x00 \
 #                        __CONF_LIRTRIM=0x00
 
-# ## STC8G1K17 18.4320MHz Configuration (Perfect 115200 Baud)
-# LIB_FLAGS           := __CONF_FOSC=18432000UL \
+
+# # ## STC8G1K17 33.1776MHz Configuration (Perfect 115200 Baud)
+# LIB_FLAGS           := __CONF_FOSC=33177600UL \
 #                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
 #                        __CONF_CLKDIV=0x00 \
 #                        __CONF_IRCBAND=0x00 \
@@ -58,23 +71,6 @@ LIB_FLAGS           := __CONF_FOSC=33177600UL \
 #                        __CONF_IRTRIM=0x00 \
 #                        __CONF_LIRTRIM=0x00
 
-# ## STC8G1K17 11.0592MHz Configuration (Perfect 115200 Baud / Legacy Standard)
-# LIB_FLAGS           := __CONF_FOSC=11059200UL \
-#                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
-#                        __CONF_CLKDIV=0x00 \
-#                        __CONF_IRCBAND=0x00 \
-#                        __CONF_VRTRIM=0x00 \
-#                        __CONF_IRTRIM=0x00 \
-#                        __CONF_LIRTRIM=0x00
-
-# ## STC8G1K17 5.5296MHz Configuration (Perfect 115200 Baud / Battery Saving)
-# LIB_FLAGS           := __CONF_FOSC=5529600UL \
-#                        __CONF_MCU_MODEL=MCU_MODEL_STC8G1K17 \
-#                        __CONF_CLKDIV=0x00 \
-#                        __CONF_IRCBAND=0x00 \
-#                        __CONF_VRTRIM=0x00 \
-#                        __CONF_IRTRIM=0x00 \
-#                        __CONF_LIRTRIM=0x00
 
 
 include ./rules.mk

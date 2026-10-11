@@ -94,7 +94,8 @@ void UART1_Config9bitUart(UART1_BaudSource_t baudSource, HAL_State_t _1TMode, ui
 void UART1_TxChar(char dat);
 void UART1_TxHex(uint8_t hex);
 void UART1_TxString(uint8_t *str);
-
+// Converts and sends an integer as readable digits (e.g., -12345 prints as "-12345")
+void UART1_TxInteger(int16_t num); 
 
 /**************************************************************************** /
  * UART2
